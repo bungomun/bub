@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+   
+   #particles-js {
+     background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(./img/ice.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+
+       /* background:black; */
+       /* 移到最下面 */
+       z-index=-1
+       /* 不要捲動 */
+       position:fixed;
+
+
+   }
+   
+   body{margin:0px;}
+   </style>
+    
+
+
+</head>
+
+
+<body>
+        <div id="particles-js"></div>
+
+        <script src="particles.min.js"></script>
+
+<script>
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+/*  將路徑指向 json*/
+particlesJS.load('particles-js', './particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+</script>
+
+</body>
+</html>
